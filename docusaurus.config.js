@@ -6,16 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'IIUM Schedule Generator',
+  tagline: 'Generate your schedule easy peasy',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  organizationName: 'iqfareez', // Usually your GitHub org/user name.
+  projectName: 'iium_schedule', // Usually your repo name.
   presets: [
     [
       'classic',
@@ -24,14 +23,15 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        // },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -43,21 +43,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'IIUM Schedule',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'IIUM Schedule Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'extract/imaalum',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Guides',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/downloads', label: 'Downloads', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/iqfareez/iium_schedule',
             label: 'GitHub',
             position: 'right',
           },
@@ -70,25 +70,30 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Guides',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Legalese',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Privacy Policy',
+                to: 'privacy-policy',
               },
+            ],
+          },
+          {
+            title: 'Connect',
+            items: [
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'GitHub',
+                href: 'http://github.com/iqfareez',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/iqfareez',
               },
             ],
           },
@@ -96,18 +101,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Devlog',
+                href: 'https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTAxOTkzNjUzNDk0NDQ3',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © 2022 Muhammad Fareez`,
       },
+      metadata: [{
+        property: "og:image", content: "https://iiumschedule.vercel.app/img/meta-banner.png"
+      }],
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
