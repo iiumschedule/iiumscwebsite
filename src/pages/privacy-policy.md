@@ -1,3 +1,7 @@
+---
+title: Privacy Policy
+---
+
 # Privacy Policy
 
 Muhammad Fareez Iqmal built the IIUM Schedule Maker app as an Open Source app. This SERVICE is provided by Muhammad Fareez Iqmal at no cost and is intended for use as is.

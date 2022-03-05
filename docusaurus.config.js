@@ -71,7 +71,7 @@ const config = {
             items: [
               {
                 label: 'Guides',
-                to: '/docs/intro',
+                to: '/docs/extract/imaalum',
               },
             ],
           },
@@ -81,6 +81,10 @@ const config = {
               {
                 label: 'Privacy Policy',
                 to: 'privacy-policy',
+              },
+              {
+                label: 'Terms and Conditions',
+                to: 'terms',
               },
             ],
           },
