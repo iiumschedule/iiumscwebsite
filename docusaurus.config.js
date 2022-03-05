@@ -38,7 +38,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -51,11 +50,13 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'extract/imaalum',
+            docId: 'extract/imaluum',
             position: 'left',
             label: 'Guides',
           },
-          { to: '/downloads', label: 'Downloads', position: 'left' },
+          {
+            to: '/downloads/stable', label: 'Downloads', position: 'left',
+          },
           {
             href: 'https://github.com/iqfareez/iium_schedule',
             label: 'GitHub',
@@ -71,7 +72,19 @@ const config = {
             items: [
               {
                 label: 'Guides',
-                to: '/docs/extract/imaalum',
+                to: '/docs/extract/imaluum',
+              },
+              {
+                label: 'Downloads',
+                to: '/downloads/stable',
+              },
+              {
+                label: 'Pre-releases',
+                to: '/downloads/beta',
+              },
+              {
+                label: 'Changelog',
+                href: 'https://github.com/iqfareez/iium_schedule/releases',
               },
             ],
           },
