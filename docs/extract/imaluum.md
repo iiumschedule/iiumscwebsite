@@ -2,7 +2,7 @@
 
 To extract the required information from i-ma'luum to use in IIUM Schedule, follow the steps below.
 
-:::caution
+:::note
 
 You'll need to access the browser's developer tools to follow this guide. Therefore, **only desktop browsers is supported**.
 
