@@ -1,3 +1,7 @@
+---
+title: Extract JSON from i-ma'luum
+---
+
 # Extract JSON from i-ma'luum
 
 To extract the required information from i-ma'luum to use in IIUM Schedule, follow the steps below.
@@ -19,13 +23,27 @@ and navigate to **My Academic >** [**Class Timetable**](https://imaluum.iium.edu
 
 Make sure to select the correct semester. (This should be same semester and session you have set in IIUM Schedule app)
 
+![semester imaluum](./screenshots/2022-03-05-191546.png)
+
 ### 2. Open Developer Tools
 
 Press keyboard shortcut <kbd>F12</kbd> or find the **Developer Tools** on your browser.
 
+![devtools brave](./screenshots/Screenshot-2022-03-06-072635.png)
+
 Then, change to **Console** tab.
 
+![devtools console brave](./screenshots/2022-03-05-192905.png)
+
+### 3. Run script
+
 Next, **copy** the code below and **paste** to the console. Then press <kbd>**Enter**</kbd>.
+
+:::tip
+
+**Firefox** may have paste protection enabled as a security feature. To allow pasting, type `allow pasting` in the console before pasting the code below.
+
+:::
 
 ```js
 var tableBody = document.getElementsByClassName("table table-hover")[0];
@@ -62,7 +80,11 @@ var json = JSON.stringify(combinedSubjectDatas);
 alert("Copy -----> " + json);
 ```
 
-You'll see the **JSON result** from the dialog shown. Copy start from `[` and ends with `]`. For example, you should copy:
+You'll see the **JSON result** from the dialog shown. Copy start from `[` and ends with `]`.
+
+![json result](./screenshots/2022-03-05-192911.png)
+
+For example, you should copy:
 
 ```json
 [
@@ -76,6 +98,8 @@ You'll see the **JSON result** from the dialog shown. Copy start from `[` and en
 ]
 ```
 
-### 3. Last step
+### 4. Finish
 
 Finally, Paste the JSON result to the app's **JSON input**.
+
+![json input iium schedule](./screenshots/2022-03-05-192843.png)

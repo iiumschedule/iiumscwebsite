@@ -50,7 +50,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'extract/imaluum',
+            docId: 'extract/imaluum/index',
             position: 'left',
             label: 'Guides',
           },
@@ -82,10 +82,7 @@ const config = {
                 label: 'Pre-releases',
                 to: '/downloads/beta',
               },
-              {
-                label: 'Changelog',
-                href: 'https://github.com/iqfareez/iium_schedule/releases',
-              },
+
             ],
           },
           {
@@ -117,6 +114,10 @@ const config = {
           {
             title: 'More',
             items: [
+              {
+                label: 'Changelog',
+                href: 'https://github.com/iqfareez/iium_schedule/releases',
+              },
               {
                 label: 'Devlog',
                 href: 'https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTAxOTkzNjUzNDk0NDQ3',
