@@ -1,8 +1,13 @@
 {
   "redirects": [
     {
-      "source": "/app",
+      "source": "/web",
       "destination": "https://iiumschedule-af71a.web.app/",
+      "permanent": true
+    },
+    {
+      "source": "/android",
+      "destination": "https://play.google.com/store/apps/details?id=com.iqfareez.iiumschedule",
       "permanent": true
     }
   ]
