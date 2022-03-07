@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/app",
+      "destination": "https://iiumschedule-af71a.web.app/",
+      "permanent": true
+    }
+  ]
+}
