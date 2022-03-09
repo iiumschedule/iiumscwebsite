@@ -4,7 +4,7 @@ title: Extract JSON from i-ma'luum
 
 # Extract JSON from i-ma'luum
 
-To extract the required information from i-ma'luum to use in IIUM Schedule, follow the steps below.
+You are viewing the steps to extract schedule information via **I-ma'luum website**. For prereg, click [here](../prereg/).
 
 :::note
 

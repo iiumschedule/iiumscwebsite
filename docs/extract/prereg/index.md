@@ -4,7 +4,7 @@ title: Extract JSON from Prereg
 
 # Extract JSON from Prereg
 
-To extract the required information from Prereg to use in IIUM Schedule, follow the steps below.
+You are viewing the steps to extract schedule information via **Prereg website**. For i-ma'luum, click [here](../imaluum/).
 
 :::note
 

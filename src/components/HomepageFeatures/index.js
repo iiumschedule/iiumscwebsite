@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_devices_re_dxae.svg').default,
+    Svg: require('@site/static/img/undraw_mobile_user_re_xta4.svg').default,
     description: (
       <>
         Designed from the ground up to be easily installed
