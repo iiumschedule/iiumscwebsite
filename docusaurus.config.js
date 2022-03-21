@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'IIUM Schedule Generator',
   tagline: 'Generate your schedule easy peasy',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://iiumschedule.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
