@@ -76,12 +76,13 @@ const config = {
               },
               {
                 label: 'Downloads',
-                to: '/downloads/stable',
-              },
-              {
-                label: 'Pre-releases',
+                // to: '/downloads/stable',
                 to: '/downloads/beta',
               },
+              // {
+              //   label: 'Pre-releases',
+              //   to: '/downloads/beta',
+              // },
 
             ],
           },
