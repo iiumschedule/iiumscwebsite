@@ -55,7 +55,7 @@ const config = {
             label: 'Guides',
           },
           {
-            to: '/downloads/stable', label: 'Downloads', position: 'left',
+            to: '/downloads/beta', label: 'Downloads', position: 'left',
           },
           {
             href: 'https://github.com/iqfareez/iium_schedule',
