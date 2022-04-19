@@ -20,11 +20,9 @@ https://albiruni-input-parser.herokuapp.com/mcte2333
 
 ### cURL
 
-```ps
+```bash
 curl -X GET \
-  'https://albiruni-input-parser.herokuapp.com/mcte2333' \
-  --header 'Accept: */*' \
-  --header 'User-Agent: Thunder Client (https://www.thunderclient.com)'
+  'https://albiruni-input-parser.herokuapp.com/mcte2333'
 ```
 
 ### Python Requests
@@ -34,37 +32,29 @@ import requests
 
 reqUrl = "https://albiruni-input-parser.herokuapp.com/mcte2333"
 
-headersList = {
- "Accept": "*/*",
- "User-Agent": "Thunder Client (https://www.thunderclient.com)"
-}
+response = requests.request("GET", reqUrl)
 
-payload = ""
+result = response.json()['result']
 
-response = requests.request("GET", reqUrl, data=payload,  headers=headersList)
-
-print(response.text)
+print(result)
 ```
 
 ### Dart http
 
 ```dart
-var headersList = {
- 'Accept': '*/*',
- 'User-Agent': 'Thunder Client (https://www.thunderclient.com)'
-};
-var url = Uri.parse('https://albiruni-input-parser.herokuapp.com/mcte2333');
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 
-var req = http.Request('GET', url);
-req.headers.addAll(headersList);
+void main() async {
+  var url = Uri.parse('https://albiruni-input-parser.herokuapp.com/mcte2333');
 
-var res = await req.send();
-final resBody = await res.stream.bytesToString();
+  var res = await http.get(url);
 
-if (res.statusCode >= 200 && res.statusCode < 300) {
-  print(resBody);
-}
-else {
-  print(res.reasonPhrase);
+  if (res.statusCode >= 200 && res.statusCode < 300) {
+    var json = jsonDecode(res.body);
+    print(json);
+  } else {
+    print(res.reasonPhrase);
+  }
 }
 ```

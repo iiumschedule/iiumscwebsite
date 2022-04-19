@@ -27,7 +27,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_devices_re_dxae.svg').default,
     description: (
       <>
-        Multi-platform easy access.
+        Multi-platform performant app. Easy access fom any devices.
       </>
     ),
   },
