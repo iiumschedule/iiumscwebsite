@@ -89,7 +89,7 @@ for (let index = 2; index < bodyChildren.length - 1; index++) {
 for (i = 0; i < sections.length; i++) {
   combinedSubjectDatas.push({
     courseCode: courseCodes[i],
-    section: sections[i],
+    section: parseInt(sections[i]),
   });
 }
 
@@ -99,18 +99,20 @@ alert("Copy -----> " + json);
 
 You'll see the **JSON result** from the dialog shown. Copy start from `[` and ends with `]`.
 
+<!-- TODO Update this screenshot to refelct the latest script -->
+
 ![json result](./screenshots/Screenshot-2022-03-06-074230.png)
 
 For example, you should copy:
 
 ```json
 [
-  { "courseCode": "GENE 4300", "section": "2" },
-  { "courseCode": "LEED 1301", "section": "33" },
-  { "courseCode": "MANU 3314", "section": "3" },
-  { "courseCode": "MCTE 3103", "section": "1" },
-  { "courseCode": "MCTE 3300", "section": "1" },
-  { "courseCode": "MCTE 3313", "section": "2" }
+  { "courseCode": "GENE 4300", "section": 2 },
+  { "courseCode": "LEED 1301", "section": 33 },
+  { "courseCode": "MANU 3314", "section": 3 },
+  { "courseCode": "MCTE 3103", "section": 1 },
+  { "courseCode": "MCTE 3300", "section": 1 },
+  { "courseCode": "MCTE 3313", "section": 2 }
 ]
 ```
 
