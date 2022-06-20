@@ -18,7 +18,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_reading_time_re_phf7.svg').default,
     description: (
       <>
-        Yup
+        Your schedules and your future is what matters
       </>
     ),
   },
