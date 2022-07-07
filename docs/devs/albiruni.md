@@ -1,6 +1,6 @@
 # albiruni
 
-[albiruni](https://pub.dev/packages/albiruni) is a scrapper wrapper for IIUM Albiruni website so you wont messing around with complicated code. Written in Dart to be easily integrated with Flutter or Dart projects.
+[albiruni](https://pub.dev/packages/albiruni) is a scrapper wrapper for the IIUM Albiruni website so you won't be messing around with complicated code. Written in Dart to be easily integrated with Flutter or Dart projects.
 
 ## Get started
 
@@ -8,28 +8,12 @@ Create/open your Flutter/Dart project, and use this package as a library.
 
 ### Depend on it
 
-Run this command in your terminal:
-
-With Dart:
-
-```console
-dart pub add albiruni
-```
-
-With Flutter:
-
-```console
-flutter pub add albiruni
-```
-
-This will add a line like this to your package's pubspec.yaml (and run an implicit `dart pub get`):
+Add the `albiruni` package to your Flutter or Dart project.
 
 ```yaml
 dependencies:
-  albiruni: ^1.1.2
+  albiruni: <latest>
 ```
-
-Alternatively, your editor might support `dart pub get` or `flutter pub get`. Check the docs for your editor to learn more.
 
 ### Import it
 
