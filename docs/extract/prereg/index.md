@@ -94,30 +94,16 @@ for (i = 0; i < sections.length; i++) {
 }
 
 var json = JSON.stringify(combinedSubjectDatas);
-alert("Copy -----> " + json);
+const myUrl = new URL("https://iiumschedule.iqfareez.com/qrcode");
+myUrl.searchParams.append("data", json);
+console.log(myUrl.href); // log target url
+window.open(myUrl.href); // go to target url
 ```
 
-You'll see the **JSON result** from the dialog shown. Copy start from `[` and ends with `]`.
-
-<!-- TODO Update this screenshot to refelct the latest script -->
-
-![json result](./screenshots/Screenshot-2022-03-06-074230.png)
-
-For example, you should copy:
-
-```json
-[
-  { "courseCode": "GENE 4300", "section": 2 },
-  { "courseCode": "LEED 1301", "section": 33 },
-  { "courseCode": "MANU 3314", "section": 3 },
-  { "courseCode": "MCTE 3103", "section": 1 },
-  { "courseCode": "MCTE 3300", "section": 1 },
-  { "courseCode": "MCTE 3313", "section": 2 }
-]
-```
+![site qrcode](./screenshots/frame_generic_dark.png)
 
 ### 4. Finish
 
-Finally, Paste the JSON result to the app's **JSON input**.
+Finally, paste the JSON result to the app's **JSON input**.
 
 ![json input iium schedule](./screenshots/app-json-input.gif)

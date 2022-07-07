@@ -11,11 +11,6 @@ You are viewing the steps to extract schedule information via **I-ma'luum websit
 You'll need to access the browser's developer tools to follow this guide. Therefore, **only desktop browsers is supported**.
 
 :::
-:::info
-
-Tested with **Brave** browser (chromium based), it should work with other browsers too.
-
-:::
 
 ### 1. Open [i-ma'luum](https://imaluum.iium.edu.my) in desktop browser
 
@@ -32,6 +27,12 @@ Press keyboard shortcut <kbd>F12</kbd> or find the **Developer Tools** on your b
 ![devtools brave](./screenshots/Screenshot-2022-03-06-072635.png)
 
 Then, change to **Console** tab.
+
+:::info
+
+The steps might be different on **Apple Safari**. Kindly follow this [article](https://balsamiq.com/support/faqs/browserconsole/#apple-safari).
+
+:::
 
 ![devtools console brave](./screenshots/2022-03-05-192905.png)
 
@@ -76,27 +77,16 @@ for (i = 0; i < sections.length; i++) {
   });
 }
 
-var json = JSON.stringify(combinedSubjectDatas);
-alert("Copy -----> " + json);
+var json = JSON.stringify(combinedSubjectDatas); // data
+const myUrl = new URL("https://iiumschedule.iqfareez.com/qrcode");
+myUrl.searchParams.append("data", json);
+console.log(myUrl.href); // log target url
+window.open(myUrl.href); // go to target url
 ```
 
-You'll see the **JSON result** from the dialog shown. Copy start from `[` and ends with `]`.
+The script will scrap the subject course code and its section. After the process completed, another site will be opened to show the QR code and Raw JSON data. Just follow the instruction there.
 
-![json result](./screenshots/2022-03-05-192911.png)
-
-For example, you should copy:
-
-```json
-[
-  { "courseCode": "CCUB 4621", "section": 114 },
-  { "courseCode": "MCTE 3104", "section": 1 },
-  { "courseCode": "MCTE 3271", "section": 2 },
-  { "courseCode": "MCTE 3312", "section": 1 },
-  { "courseCode": "MCTE 3352", "section": 1 },
-  { "courseCode": "MCTE 3372", "section": 1 },
-  { "courseCode": "MCTE 3373", "section": 2 }
-]
-```
+![site qrcode](./screenshots/frame_generic_light.png)
 
 ### 4. Finish
 

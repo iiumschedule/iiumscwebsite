@@ -2,13 +2,13 @@
 
 :::info
 
-To run app package that are not coming from Microsoft Store, a certificate need to be installed on the machine beforehands.
+To run an app package that is not coming from Microsoft Store, a certificate needs to be installed on the machine beforehand.
 
 :::
 
-Following are the steps to install certificate for IIUM Schedule app.
+Following are the steps to install the bundled certificate for the IIUM Schedule app.
 
-1. Right click the installer to open **Properties**. Then, go to the **Digital Signatures** tab.
+1. Right-click the installer (`.msix` file) to open its **Properties**. Then, go to the **Digital Signatures** tab.
 
    ![properties](./screenshots/2022-03-05-174051.png)
 
@@ -28,11 +28,11 @@ Following are the steps to install certificate for IIUM Schedule app.
 
    ![wizard](./screenshots/2022-03-05-174006.png)
 
-6. Change from the first option to the second option that says **Place all certificates in the following store**. Then, click on <kbd>Browse...</kbd>
+6. Click the **Place all certificates in the following store** button. Then, click on <kbd>Browse...</kbd>
 
    ![certificate-choose](./screenshots/2022-03-05-173916.png)
 
-7. A popup window will shows displaying all the machine's certificate folder. Select the **Trusted Root Certification Authorities**. Then, click <kbd>OK</kbd>
+7. A popup window will show displaying all the machine's certificate folders. Select the **Trusted Root Certification Authorities**. Then, click <kbd>OK</kbd>
 
    ![cert folder chooser](./screenshots/2022-03-05-173745.png)
 
@@ -44,12 +44,12 @@ Following are the steps to install certificate for IIUM Schedule app.
 
    ![Finishing the certificate installer](./screenshots/2022-03-05-173738.png)
 
-10. A dialog will shows indicates your certificate installation is successful. Click <kbd>OK</kbd> to close it.
+10. A dialog will show to indicate the certificate installation is successful. Click <kbd>OK</kbd> to close it.
 
     ![dialog successful](./screenshots/2022-03-05-173732.png)
 
 11. Close all the properties & certificate windows.
 
-12. Last but not least, run the installer again. There should be no error message etc. Click on <kbd>Install</kbd> to finish the installation.
+12. Finally, **re-run the installer**. There should be no error message etc. Click on <kbd>Install</kbd> to finish the installation.
 
     ![install msix package no error](./screenshots/2022-03-05-173709.png)
