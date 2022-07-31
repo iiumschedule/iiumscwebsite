@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         Designed from the ground up to be easily installed
-        to get your schedule quickly. (acah)
+        to get your schedule quickly and keeping track of your classes.
       </>
     ),
   },
@@ -18,7 +18,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_reading_time_re_phf7.svg').default,
     description: (
       <>
-        Your schedules and your future is what matters
+        Your schedules and your future is what matters.
       </>
     ),
   },
@@ -27,7 +27,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_devices_re_dxae.svg').default,
     description: (
       <>
-        Multi-platform performant app. Easy access fom any devices.
+        Multi-platform performant app. Easy access fom any devices. Which also means it is fast, reliable, and easy to use.
       </>
     ),
   },
