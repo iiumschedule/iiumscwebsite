@@ -6,9 +6,7 @@ Format to proper IIUM course code formats.
 
 https://albiruni-input-parser.herokuapp.com
 
-## Usage
-
-Append unformatted course code to the end of the url.
+> Append unformatted course code to the end of the url.
 
 ## Examples
 
