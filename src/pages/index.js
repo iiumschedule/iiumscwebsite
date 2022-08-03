@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import Typewriter from 'typewriter-effect';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -11,7 +12,24 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        <h1 className="hero__title">
+          <Typewriter options={{
+            loop: true,
+          }}
+            onInit={(typewriter) => {
+              typewriter.typeString('IIUM Schedule Generator')
+                .changeDeleteSpeed(20)
+                .pauseFor(1300)
+                .deleteChars(9)
+                .typeString('Maker')
+                .pauseFor(1300)
+                .deleteChars(5)
+                .typeString('Browser')
+                .pauseFor(1300)
+                .start();
+            }}
+          />
+        </h1 >
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
