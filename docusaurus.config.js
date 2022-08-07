@@ -25,13 +25,20 @@ const config = {
           // Please change this to your repo.
           // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
-        blog: false,
+        blog: {
+          routeBasePath: '/changelog',
+          showReadingTime: true,
+          blogTitle: 'Release Notes',
+          blogDescription: 'IIUM Schedule stable version release notes',
+          blogSidebarTitle: 'Release notes',
+          path: 'changelog',
+          postsPerPage: 4,
+          showReadingTime: false,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        // blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -116,8 +123,9 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Changelog',
-                href: 'https://github.com/iqfareez/iium_schedule/releases',
+                label: 'Release Notes',
+                // to: '/changelog',
+                href: 'https://github.com/iqfareez/iium_schedule/releases'
               },
               {
                 label: 'Devlog',

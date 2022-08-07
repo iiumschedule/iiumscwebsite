@@ -1,8 +1,8 @@
 ---
-title: Extract JSON from i-ma'luum
+title: from i-ma'luum
 ---
 
-# Extract JSON from i-ma'luum
+# Extract subjects from i-ma'luum
 
 You are viewing the steps to extract schedule information via **I-ma'luum website**. For prereg, click [here](../prereg/).
 

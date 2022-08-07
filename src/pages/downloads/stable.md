@@ -26,8 +26,11 @@ IIUM Schedule app is available for multiple platforms. [(Release notes)](https:/
 ## Windows
 
 - [`.exe` installer][exe installer] **(Recommended)**
+- winget (Windows 10/11) **(Recommended)** 
+    ```powershell
+    winget install MuhammadFareezIqmal.IIUMSchedule`
+    ```
 - [`.msix` installer][msix installer]
-- `winget` - Currently not ready.
 
 > **Fox `.msix` installer only**. For first time installs, please go through [this steps](../windows-cert) on installing
 > the required certificates
