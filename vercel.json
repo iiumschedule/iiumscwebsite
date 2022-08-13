@@ -2,7 +2,12 @@
   "redirects": [
     {
       "source": "/web",
-      "destination": "https://iiumschedule-af71a.web.app/",
+      "destination": "https://iiumschedule.web.app/",
+      "permanent": true
+    },
+    {
+      "source": "/github",
+      "destination": "https://github.com/iqfareez/iium_schedule",
       "permanent": true
     },
     {

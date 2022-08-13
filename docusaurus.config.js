@@ -27,7 +27,6 @@ const config = {
         },
         blog: {
           routeBasePath: '/changelog',
-          showReadingTime: true,
           blogTitle: 'Release Notes',
           blogDescription: 'IIUM Schedule stable version release notes',
           blogSidebarTitle: 'Release notes',
@@ -62,7 +61,7 @@ const config = {
             label: 'Guides',
           },
           {
-            to: '/downloads/beta', label: 'Downloads', position: 'left',
+            to: '/downloads', label: 'Downloads', position: 'left',
           },
           {
             href: 'https://github.com/iqfareez/iium_schedule',
@@ -84,13 +83,8 @@ const config = {
               {
                 label: 'Downloads',
                 // to: '/downloads/stable',
-                to: '/downloads/beta',
+                to: '/downloads',
               },
-              // {
-              //   label: 'Pre-releases',
-              //   to: '/downloads/beta',
-              // },
-
             ],
           },
           {

@@ -1,0 +1,96 @@
+---
+title: Downloads
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import Button from '@mui/material/Button';
+import CodeBlock from '@theme/CodeBlock';
+
+# Downloads
+
+:::caution NOTE
+
+IIUM Schedule App is currently **under development**. However, you are invited to try it early. Get it on from
+the [releases page](https://github.com/iqfareez/iium_schedule/releases).
+
+Looking forward to hear your feedback and comment. Thank you. 😉
+
+:::
+
+IIUM Schedule app is available for multiple platforms. [(Release notes)](https://example.com)
+
+## Installing the app
+
+### Android
+
+<Tabs
+    defaultValue="gplay"
+    values={[
+        {label: 'Google Play Store', value: 'gplay'},
+        {label: 'Sideload apk', value: 'apk'},
+    ]}>
+    <TabItem value="gplay">
+    <a href="https://play.google.com/store/apps/details?id=com.iqfareez.iiumschedule&utm_source=website&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+    <img
+    alt="Get it on Google Play"
+    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+    width="300"
+    height="400"/>
+    </a>
+    </TabItem>
+    <TabItem value="apk">
+        <Button variant="contained" color="primary" onClick={() => {window.open('https://github.com/iqfareez/iium_schedule/releases')}}>
+            Download apk(s)
+        </Button>
+    </TabItem>
+
+</Tabs>
+
+### Windows
+
+<Tabs
+    defaultValue="exe"
+    values={[
+        {label: 'exe', value: 'exe'},
+        {label: 'winget', value: 'winget'},
+        {label: 'msix', value: 'msix'},
+    ]}>
+    <TabItem value="exe">
+        <Button
+            variant="contained"
+            color="primary"
+            onClick={()=> {window.open('https://github.com/iqfareez/iium_schedule/releases/download/1.0.0-pre.7%2B10/iiumschedulesetup.exe')}}>
+        Download .exe installer
+        </Button>
+    </TabItem>
+    <TabItem value="winget">
+        <CodeBlock language="powershell">
+            winget install MuhammadFareezIqmal.IIUMSchedule
+        </CodeBlock>
+    </TabItem>
+    <TabItem value="msix">
+        <p>Before installing, please install the app ceriticate on your machine first. Follow the <a
+            href="../windows-cert">guide</a> here.</p>
+        <Button
+            variant="contained"
+            color="primary"
+            onClick={()=> {window.open("https://github.com/iqfareez/iium_schedule/releases/download/1.0.0-pre.7%2B10/flutter_iium_schedule.msix")}}>
+            Download .msix installer
+        </Button>
+    </TabItem>
+</Tabs>
+
+### Web
+
+> **PWA ready**. The web app can be installed on your device.
+
+- https://iiumschedule.web.app/ (main)
+- https://iiumschedule.iqfareez.com/web (redirect to main)
+- https://schedule.iium.online/ domain will be expired in **September**
+
+[github releases]  https://github.com/iqfareez/iium_schedule/releases
+
+[exe installer]  https://github.com/iqfareez/iium_schedule/releases/download/1.0.0-pre.7%2B10/iiumschedulesetup.exe
+
+[msix installer]  https://github.com/iqfareez/iium_schedule/releases/download/1.0.0-pre.7%2B10/flutter_iium_schedule.msix
