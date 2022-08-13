@@ -33,7 +33,7 @@ const sidebars = {
       label: '🧑🏼‍💻 For developers',
       link: {
         type: 'doc',
-        id: 'extract/index',
+        id: 'devs/albiruni',
       },
       items: ['devs/albiruni', 'devs/input-parser-api'],
     },
