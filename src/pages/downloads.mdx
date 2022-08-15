@@ -4,8 +4,9 @@ title: Downloads
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
-import Button from '@mui/material/Button';
 import CodeBlock from '@theme/CodeBlock';
+import DownloadButtons from "@site/src/components/DownloadButtons/DownloadButtons";
+
 
 # Downloads
 
@@ -39,10 +40,7 @@ IIUM Schedule app is available for multiple platforms. [(Release notes)](https:/
     height="400"/>
     </a>
     </TabItem>
-    <TabItem value="apk">
-        <Button variant="contained" color="primary" onClick={() => {window.open('https://github.com/iqfareez/iium_schedule/releases')}}>
-            Download apk(s)
-        </Button>
+    <TabItem value="apk"><DownloadButtons filetype={".apk"}/>
     </TabItem>
 
 </Tabs>
@@ -57,14 +55,10 @@ IIUM Schedule app is available for multiple platforms. [(Release notes)](https:/
         {label: 'msix', value: 'msix'},
     ]}>
     <TabItem value="exe">
-        <Button
-            variant="contained"
-            color="primary"
-            onClick={()=> {window.open('https://github.com/iqfareez/iium_schedule/releases/download/1.0.0-pre.7%2B10/iiumschedulesetup.exe')}}>
-        Download .exe installer
-        </Button>
+        <DownloadButtons filetype={".exe"}/>
     </TabItem>
     <TabItem value="winget">
+        <blockquote> Windows Package Manager winget command-line tool is bundled with Windows 11 and modern versions of Windows 10 by default as the App Installer.</blockquote>
         <CodeBlock language="powershell">
             winget install MuhammadFareezIqmal.IIUMSchedule
         </CodeBlock>
@@ -72,12 +66,7 @@ IIUM Schedule app is available for multiple platforms. [(Release notes)](https:/
     <TabItem value="msix">
         <p>Before installing, please install the app ceriticate on your machine first. Follow the <a
             href="../windows-cert">guide</a> here.</p>
-        <Button
-            variant="contained"
-            color="primary"
-            onClick={()=> {window.open("https://github.com/iqfareez/iium_schedule/releases/download/1.0.0-pre.7%2B10/flutter_iium_schedule.msix")}}>
-            Download .msix installer
-        </Button>
+        <DownloadButtons filetype={".msix"}/>
     </TabItem>
 </Tabs>
 
@@ -89,8 +78,3 @@ IIUM Schedule app is available for multiple platforms. [(Release notes)](https:/
 - https://iiumschedule.iqfareez.com/web (redirect to main)
 - https://schedule.iium.online/ domain will be expired in **September**
 
-[github releases]  https://github.com/iqfareez/iium_schedule/releases
-
-[exe installer]  https://github.com/iqfareez/iium_schedule/releases/download/1.0.0-pre.7%2B10/iiumschedulesetup.exe
-
-[msix installer]  https://github.com/iqfareez/iium_schedule/releases/download/1.0.0-pre.7%2B10/flutter_iium_schedule.msix
