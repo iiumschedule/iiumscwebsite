@@ -64,6 +64,11 @@ const config = {
             to: '/downloads', label: 'Downloads', position: 'left',
           },
           {
+            href: 'https://iiumschedule.web.app',
+            label: 'Web app',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/iqfareez/iium_schedule',
             label: 'GitHub',
             position: 'right',
@@ -101,19 +106,6 @@ const config = {
             ],
           },
           {
-            title: 'Connect',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'http://github.com/iqfareez',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/iqfareez',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
@@ -128,7 +120,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2022 Muhammad Fareez`,
+        copyright: '<div>Copyright © 2022 <a href="https://iqfareez.com">Muhammad Fareez<a><div>',
       },
       metadata: [{
         property: "og:image", content: "https://iiumschedule.vercel.app/img/meta-banner.png"
