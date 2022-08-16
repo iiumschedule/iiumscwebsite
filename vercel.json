@@ -6,8 +6,13 @@
       "permanent": true
     },
     {
-      "source": "/github",
+      "source": "/gh",
       "destination": "https://github.com/iqfareez/iium_schedule",
+      "permanent": true
+    },
+    {
+      "source": "/thisgh",
+      "destination": "https://github.com/iqfareez/iiumscwebsite",
       "permanent": true
     },
     {
