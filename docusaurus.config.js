@@ -120,7 +120,8 @@ const config = {
             ],
           },
         ],
-        copyright: '<div>Copyright © 2022 <a href="https://iqfareez.com">Muhammad Fareez<a><div>',
+        // thanks https://github.com/facebook/docusaurus/discussions/6628
+        copyright: '<div>Copyright © 2022 <a style="color: #bbe3ff" href="https://iqfareez.com">Muhammad Fareez</a></div>',
       },
       metadata: [{
         property: "og:image", content: "https://iiumschedule.vercel.app/img/meta-banner.png"
