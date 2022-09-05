@@ -83,7 +83,7 @@ const config = {
             items: [
               {
                 label: 'Guides',
-                to: '/docs/extract/imaluum',
+                to: '/docs/extract',
               },
               {
                 label: 'Downloads',
