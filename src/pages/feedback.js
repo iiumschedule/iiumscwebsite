@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import {TextField, Button, LinearProgress, Alert} from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
 import {useForm} from "react-hook-form";
+import MUIThemeWrapper from "../components/MUIThemeWrapper";
 
 export default function FeedbackPage() {
   const [loading, setLoading] = React.useState(false);
@@ -33,6 +34,7 @@ export default function FeedbackPage() {
 
   console.log(errors);
 
+
   return (
       <Layout
           title="Feedback/Report issues"
@@ -47,37 +49,47 @@ export default function FeedbackPage() {
             to fill in the form below and submit it to us. We'll try to get back to you as soon as possible.
           </p>
 
-          <form onSubmit={handleSubmit(onSubmit, onError)}>
-            <TextField fullWidth variant="outlined" margin={"dense"} required={true} type="text"
-                       label="Nickname" {...register("name", {maxLength: 80})} />
-            <br/>
-            <TextField fullWidth variant="outlined" margin={"dense"} type="email" label="Email"
-                       helperText={"Recommended to leave your email so that I can respond"} {...register("email", {
-              required: true,
-              pattern: /^\S+@\S+$/i
-            })} />
-            <br/>
-            <TextField fullWidth variant="outlined" margin={"dense"} required={true} type="text" label="Title"
-                       placeholder={"Eg: Button X not working"} {...register("title", {
-              required: true,
-              maxLength: 90
-            })} />
-            <br/>
-            <TextField fullWidth multiline minRows={4} variant="outlined" margin={"dense"} type="text"
-                       label={"Description"}
-                       placeholder="Tell me more what you think..." {...register("description", {required: false})} />
-            <br/>
+          <MUIThemeWrapper>
+            <form onSubmit={handleSubmit(onSubmit, onError)}>
+              <TextField fullWidth variant="outlined" margin={"dense"} required={true} type="text"
+                         label="Nickname" {...register("name", {maxLength: 80})} />
+              <br/>
+              <TextField fullWidth variant="outlined" margin={"dense"} type="email" label="Email"
+                         helperText={"Please to leave your email here so that I can respond"} {...register("email", {
+                required: true,
+                pattern: /^\S+@\S+$/i
+              })} />
+              <br/>
+              <TextField fullwidth variant={"outlined"} margin={"dense"} type={"text"}
+                         helperText={"Open app, click on version number on the upper left corner, click copy debug info, then paste here"}
+                         label={"App info"} placeholder={"eg: Windows; v1.0.1"} {...register("title", {
+                required: false,
+                maxLength: 30
+              })}
+              />
+              <br/>
+              <TextField fullWidth variant="outlined" margin={"dense"} required={true} type="text" label="Title"
+                         placeholder={"Eg: Button X not working"} {...register("title", {
+                required: true,
+                maxLength: 90
+              })} />
+              <br/>
+              <TextField fullWidth multiline minRows={4} variant="outlined" margin={"dense"} type="text"
+                         label={"Description"}
+                         placeholder="Tell me more what you think..." {...register("description", {required: false})} />
+              <br/>
 
-            {/*<input type={"submit"}/>*/}
-            <Button disabled={loading} type="submit" variant="contained" color="primary" endIcon={<SendIcon/>}
-                    style={{marginTop: "20px", marginBottom: "10px"}}>Submit</Button>
+              {/*<input type={"submit"}/>*/}
+              <Button disabled={loading} type="submit" variant="contained" color="primary" endIcon={<SendIcon/>}
+                      style={{marginTop: "20px", marginBottom: "10px"}}>Submit</Button>
 
-            {loading && <LinearProgress/>}
-            {sent && <Alert severity="success" action={
-              <Button href={'/'}>Back Home</Button>
-            }>Feedback successfully sent!</Alert>}
-            <div style={{padding: "40px"}}></div>
-          </form>
+              {loading && <LinearProgress/>}
+              {sent && <Alert severity="success" action={
+                <Button href={'/'}>Back Home</Button>
+              }>Feedback successfully sent!</Alert>}
+              <div style={{padding: "40px"}}></div>
+            </form>
+          </MUIThemeWrapper>
         </main>
       </Layout>
   );
