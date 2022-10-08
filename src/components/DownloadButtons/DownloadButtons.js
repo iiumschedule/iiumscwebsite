@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import axios from "axios";
+import MUIThemeWrapper from "../MUIThemeWrapper";
 
 export default function SearchResults(props) {
     const [data, setData] = useState([]);
@@ -24,7 +25,7 @@ export default function SearchResults(props) {
     }, []);
 
     return (
-        <>
+        <MUIThemeWrapper>
             {data.map(item => (
                 <Box mt={1}><Button spacing={2} onClick={() => {
                     window.open(item.browser_download_url)
@@ -33,7 +34,7 @@ export default function SearchResults(props) {
                 </Button>
                 </Box>
             ))}
-        </>
+        </MUIThemeWrapper>
     );
 }
 
