@@ -114,8 +114,8 @@ const config = {
               },
               {
                 label: 'Release Notes',
-                // to: '/changelog',
-                href: 'https://github.com/iqfareez/iium_schedule/releases'
+                to: '/changelog',
+                // href: 'https://github.com/iqfareez/iium_schedule/releases'
               },
               {
                 label: 'Devlog',
