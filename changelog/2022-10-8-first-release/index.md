@@ -2,7 +2,7 @@
 title: v1.0.0
 authors: [fareez]
 description: First release
-image: https://user-images.githubusercontent.com/60868965/158057066-54c3268c-0d97-4714-ac09-669620bac837.png
+image: release-meta.png
 tags: [v1.0.0, first release]
 ---
 
@@ -44,6 +44,9 @@ app pros into one; **auto-generate beautiful schedule from i-ma'alum**.
 Like my other app, I begin by creating a Flutter project and start developing the UI and basic functionalities. Sometimes the
 development stalled due to time constraints _(you know... university stuffs)_, but I tried to keep the development slow and steady. I would like 
 to thank [PlashSpeed-Aiman](https://github.com/PlashSpeed-Aiman) for his insights and contributions.
+
+For those whose interested to know the development journey, feel free to see this my devlog on Instagram. There are three part 
+as of know, starting with [this](https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTAxOTkzNjUzNDk0NDQ3).
 
 [//]: # (todo: add insta devlog)
 
