@@ -109,6 +109,10 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'Send feedback',
+                to: 'feedback'
+              },
+              {
                 label: 'Release Notes',
                 // to: '/changelog',
                 href: 'https://github.com/iqfareez/iium_schedule/releases'
