@@ -9,12 +9,10 @@ export default function SearchResults(props) {
     useEffect(() => {
         let ignore = false;
 
-        // TODO: Change to latest releases only after grand release 1.0.0
-
         async function fetchData() {
-            const result = await axios('https://api.github.com/repos/iqfareez/iium_schedule/releases');
+            const result = await axios('https://api.github.com/repos/iqfareez/iium_schedule/releases/latest');
 
-            const assets = result.data[0].assets.filter(asset => asset.name.endsWith(props.filetype));
+            const assets = result.data.assets.filter(asset => asset.name.endsWith(props.filetype));
             console.log(assets)
             if (!ignore) setData(assets);
         }
