@@ -2,7 +2,7 @@
 title: v1.0.0
 authors: [fareez]
 description: First release
-image: release-meta.png
+image: https://res.cloudinary.com/iqfareez-cloud/image/upload/v1665238494/IIUM%20Schedule/v1.0.0-release-meta_lswgam.png
 tags: [v1.0.0, first release]
 ---
 
