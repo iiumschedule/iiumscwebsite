@@ -60,14 +60,6 @@ export default function FeedbackPage() {
                 pattern: /^\S+@\S+$/i
               })} />
               <br/>
-              <TextField fullwidth variant={"outlined"} margin={"dense"} type={"text"}
-                         helperText={"Open app, click on version number on the upper left corner, click copy debug info, then paste here"}
-                         label={"App info"} placeholder={"eg: Windows; v1.0.1"} {...register("title", {
-                required: false,
-                maxLength: 30
-              })}
-              />
-              <br/>
               <TextField fullWidth variant="outlined" margin={"dense"} required={true} type="text" label="Title"
                          placeholder={"Eg: Button X not working"} {...register("title", {
                 required: true,
