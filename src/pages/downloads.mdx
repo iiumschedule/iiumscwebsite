@@ -38,10 +38,10 @@ IIUM Schedule app is available for multiple platforms. [(Release notes)](/change
 ### Windows
 
 <Tabs
-    defaultValue="exe"
+    defaultValue="winget"
     values={[
-        {label: 'exe', value: 'exe'},
         {label: 'winget', value: 'winget'},
+        {label: 'exe', value: 'exe'},
         {label: 'msix', value: 'msix'},
     ]}>
     <TabItem value="exe">
@@ -54,7 +54,7 @@ IIUM Schedule app is available for multiple platforms. [(Release notes)](/change
         </CodeBlock>
     </TabItem>
     <TabItem value="msix">
-        <p>Before installing, please install the app ceriticate on your machine first. Follow the <a
+        <p>Before installing, please install the app certificate on your machine first. Follow the <a
             href="../windows-cert">guide</a> here.</p>
         <DownloadButtons filetype={".msix"}/>
     </TabItem>
@@ -67,3 +67,27 @@ IIUM Schedule app is available for multiple platforms. [(Release notes)](/change
 - https://iiumschedule.web.app/ (main)
 - https://iiumschedule.iqfareez.com/web (redirect to main)
 
+## Updating
+
+### Android
+
+Please find the download link in the [above section](#android)
+
+Please note that, Google Play Store version and sideloaded version is not compatible with each other due to its signing key. If you are installing the app from Google Play, then update it via Google Play too.
+
+### Windows
+
+For winget, run the following command to update to the latest release.
+
+```powershell
+winget upgrade MuhammadFareezIqmal.IIUMSchedule
+```
+
+For other types of installation, see above [section](#windows).
+
+### Web
+
+Visit the link in the [above section](#web).
+
+Browser tends to cache the current version for a some duration before load a new version.
+To force update, you can use hot refresh (<kbd>Ctrl+F5</kbd>) in desktop browser.
