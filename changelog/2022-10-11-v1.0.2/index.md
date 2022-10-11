@@ -2,7 +2,7 @@
 title: v1.0.2
 authors: [fareez]
 description: Second patches, I've listed to your feedback
-image: https://res.cloudinary.com/iqfareez-cloud/image/upload/v1665271970/IIUM%20Schedule/v1.0.1_q2qxsl.png
+image: https://res.cloudinary.com/iqfareez-cloud/image/upload/v1665446690/IIUM%20Schedule/v1.0.2_kl5crp.png
 tags: [v1.0.2, patch]
 ---
 
