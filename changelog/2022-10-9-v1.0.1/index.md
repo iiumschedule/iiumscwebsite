@@ -1,9 +1,9 @@
 ---
 title: v1.0.1
 authors: [fareez]
-description: First release
+description: First patch
 image: https://res.cloudinary.com/iqfareez-cloud/image/upload/v1665271970/IIUM%20Schedule/v1.0.1_q2qxsl.png
-tags: [v1.0.0, patch]
+tags: [v1.0.1, patch]
 ---
 
 [![GitHub Releases](https://img.shields.io/badge/github-release-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iqfareez/iium_schedule/releases/tag/1.0.1%2B16)
