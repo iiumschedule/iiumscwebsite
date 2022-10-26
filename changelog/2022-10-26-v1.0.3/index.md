@@ -12,5 +12,6 @@ tags: [v1.0.3, patch]
 
 - :sparkles: Added support for **Postgraduate** studies. Postgraduate students can now browse for course or create schedule
 using the app.
+  ![demo-gif](./demo-pg.gif)
 - :lipstick: Move the version number closer to the left
 - :arrow_up: Upgrade dependencies
