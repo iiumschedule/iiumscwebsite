@@ -47,40 +47,27 @@ Next, **copy** the code below and **paste** to the console. Then press <kbd>**En
 :::
 
 ```js
-var tableBody = document.getElementsByClassName("table table-hover")[0];
-var data = tableBody.getElementsByTagName("tr");
+const tableBody = document.getElementsByClassName("table table-hover")[0];
+const data = tableBody.getElementsByTagName("tr");
 
-var nullIndex = new Array();
-var courseCodes = new Array();
-var sections = new Array();
-var combinedSubjectDatas = new Array();
+const extractedData = [];
 
-// section
 for (let i = 1; i < data.length; i++) {
-  // add unnecessary rows to unwanted array
-  if (data[i].cells[2].getAttribute("rowspan") === null) nullIndex.push(i);
-  // only extract the correct rows
-  else sections.push(parseInt(data[i].cells[2].innerText));
-}
+  // skip empty rows
+  if (data[i].cells[2].getAttribute("rowspan") === null) continue;
 
-// course code
-for (let i = 1; i < data.length; i++) {
-  // extract course code except the rows in unwanted array
-  if (!nullIndex.includes(i)) courseCodes.push(data[i].cells[0].innerText);
-}
-
-// combine code & section
-for (i = 0; i < sections.length; i++) {
-  combinedSubjectDatas.push({
-    courseCode: courseCodes[i],
-    section: sections[i],
+  const coursecode = data[i].cells[0].innerText;
+  const sect = parseInt(data[i].cells[2].innerText);
+  extractedData.push({
+    courseCode: coursecode,
+    section: sect,
   });
 }
 
-var json = JSON.stringify(combinedSubjectDatas); // data
+const json = JSON.stringify(extractedData); // data
 const myUrl = new URL("https://iiumschedule.iqfareez.com/qrcode");
 myUrl.searchParams.append("data", json);
-console.log(myUrl.href); // log target url
+console.log(myUrl.href);
 window.open(myUrl.href); // go to target url
 ```
 
