@@ -67,35 +67,31 @@ Next, **copy** the code below and **paste** to the console. Then press <kbd>**En
 :::
 
 ```js
-var tableBody = document.querySelector(
-  "body > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > table > tbody"
-);
+const tableBody =
+    document.querySelector("body > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td > table > tbody");
 
-var courseCodes = new Array();
-var sections = new Array();
-var combinedSubjectDatas = new Array();
+const courseCodes = [];
+const sections = [];
+const combinedSubjectDatas = [];
 
-var bodyChildren = tableBody.children;
+const bodyChildren = tableBody.children;
 
 for (let index = 2; index < bodyChildren.length - 1; index++) {
   const element = bodyChildren[index].children;
-  const subject = element[1].textContent;
-  const section = element[2].textContent;
-  courseCodes.push(subject);
-  sections.push(section);
+  const subject = element[1].textContent
+  const section = element[2].textContent
+  courseCodes.push(subject)
+  sections.push(section)
 }
 
 // combine code & section
-for (i = 0; i < sections.length; i++) {
-  combinedSubjectDatas.push({
-    courseCode: courseCodes[i],
-    section: parseInt(sections[i]),
-  });
+for (let i = 0; i < sections.length; i++) {
+  combinedSubjectDatas.push({ courseCode: courseCodes[i], section: parseInt(sections[i]) });
 }
 
-var json = JSON.stringify(combinedSubjectDatas);
-const myUrl = new URL("https://iiumschedule.iqfareez.com/qrcode");
-myUrl.searchParams.append("data", json);
+const json = JSON.stringify(combinedSubjectDatas);
+const myUrl = new URL('https://iiumschedule.iqfareez.com/qrcode');
+myUrl.searchParams.append('data', json);
 console.log(myUrl.href); // log target url
 window.open(myUrl.href); // go to target url
 ```
