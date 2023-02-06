@@ -21,8 +21,6 @@ tags: [v1.1.0, minor]
 
 ## Others
 
-- :arrow_up: Upgraded framework to [Flutter 3.7](https://docs.flutter.dev/development/tools/sdk/release-notes/release-notes-3.7.0)
-- :arrow_up: Upgraded app dependencies
 - :truck: Migrated database from [Hive](https://docs.hivedb.dev/) to [**Isar**](https://isar.dev/). This migration is needed to fix issues related to schedule data. Worry not, your previously saved schedule are retained. 
 - :bug: Edited schedule now **persists** when user exited the app [#47](https://github.com/iqfareez/iium_schedule/issues/47)
 - :zap: Force highest available **refresh rate** for certain devices. [#58](https://github.com/iqfareez/iium_schedule/pull/58)
@@ -34,6 +32,9 @@ tags: [v1.1.0, minor]
 - :heart: Added **favourites**. When search for subject in course browser, the subject can now be favourited by tapping the heart icon.
   ![favourite subject](https://imgur.com/BWCCqK6.png)
 - :busts_in_silhouette: Added [link](https://github.com/iqfareez/iium_schedule#contributors) to contributors in about app dialog.
+- :arrow_up: Upgraded framework to [Flutter 3.7](https://docs.flutter.dev/development/tools/sdk/release-notes/release-notes-3.7.0)
+- :arrow_up: Upgraded app dependencies
+- :arrow_up: Raised `minSdkVersion` to API level 17 (Android 4.2)
 
 ## Known issues
 
