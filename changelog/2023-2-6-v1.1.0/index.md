@@ -16,16 +16,16 @@ tags: [v1.1.0, minor]
 
   ![material 3 screenshots](https://user-images.githubusercontent.com/60868965/216872570-3ed6b8e4-f2cf-4811-a480-9c288e6ee6f5.png)
 
-- :sparkles: Added **pull-to-refresh** feature. Thanks to [@ElyasAsmad](https://github.com/ElyasAsmad) [#51](https://github.com/iqfareez/iium_schedule/pull/51)
+- :sparkles: Added **pull-to-refresh** feature. Thanks to [@ElyasAsmad](https://github.com/ElyasAsmad). [#51](https://github.com/iqfareez/iium_schedule/pull/51)
   - On saved schedule, pull the schedule to refresh subjects data (eg: venue) [[Watch demo video]](https://youtube.com/shorts/k4qmzEy7j3w?feature=share)
-- :scroll: Schedule can now be **directly imported from** [**I-Ma'luum**](https://imaluum.iium.edu.my/MyAcademic/schedule) (class timetable). Be sure to select the correct semester and session in the i-ma'luum before adding downloading it to the app. [[Watch demo video]](https://youtube.com/shorts/pCS-3Z5_tOY) [#26](https://github.com/iqfareez/iium_schedule/issues/26)
+- :scroll: Schedule can now be **directly imported from** [**I-Ma'luum**](https://imaluum.iium.edu.my/MyAcademic/schedule) (class timetable). Be sure to select the correct semester and session in the i-ma'luum before downloading it to the app. [[Watch demo video]](https://youtube.com/shorts/pCS-3Z5_tOY) [#26](https://github.com/iqfareez/iium_schedule/issues/26)
   - Unfortunately, this feature is available on **Android only**. For web and Windows users, you may import the [JSON file from i-Ma'luum](/docs/extract/) instead.
 
 ## Others
 
 - :truck: Migrated database from [Hive](https://docs.hivedb.dev/) to [**Isar**](https://isar.dev/). This migration is needed to fix issues related to schedule data. Worry not, your previously saved schedule are retained.
 - :bug: Edited schedule now **persists** when user exited the app [#47](https://github.com/iqfareez/iium_schedule/issues/47)
-- :zap: Force highest available **refresh rate** for certain devices. [#58](https://github.com/iqfareez/iium_schedule/pull/58)
+- :zap: Force highest available **refresh rate** for certain devices.  Thanks to [@ElyasAsmad](https://github.com/ElyasAsmad). [#58](https://github.com/iqfareez/iium_schedule/pull/58)
 - :zap: Previously when creating schedule, the schedule in validator page will not refresh (require manual refresh) when user go back and make changes in the input course page. Now, the issue was fixed. The validator page will **refresh automatically** based on the input courses. _I know you don't understand this part. Long story short, bug is squashed :skull:_
 - :pencil2: Set default semester to **Semester 2** (Session 2022/2023)
 - :lipstick: **Redesign** JSON import. [[Screenshot](https://imgur.com/jdtIApS.png)]
@@ -37,6 +37,13 @@ tags: [v1.1.0, minor]
 - :arrow_up: Upgraded framework to [Flutter 3.7](https://docs.flutter.dev/development/tools/sdk/release-notes/release-notes-3.7.0)
 - :arrow_up: Upgraded app dependencies
 - :arrow_up: Raised `minSdkVersion` to API level 17 (Android 4.2)
+
+:::note
+
+If you found any issues or bug in this release, feel free to let me know via [GitHub Issues](https://github.com/iqfareez/iium_schedule/issues) or
+by sending a [feedback](../feedback). Any suggestions for future improvements is also very welcomed.
+
+:::
 
 ## Known issues
 
