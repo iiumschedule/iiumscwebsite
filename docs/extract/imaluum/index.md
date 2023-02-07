@@ -9,6 +9,7 @@ You are viewing the steps to extract schedule information via **I-ma'luum websit
 :::note
 
 You'll need to access the browser's developer tools to follow this guide. Therefore, **only desktop browsers is supported**.
+For Android, you may use **import from i-Ma'luum** directly.
 
 :::
 
@@ -77,6 +78,6 @@ The script will scrap the subject course code and its section. After the process
 
 ### 4. Finish
 
-Finally, Paste the JSON result to the app's **JSON input**.
+Finally, Paste the JSON result into the app's **JSON input** (Create schedule > Input kulliyyah > Input courses > Import from... > JSON.
 
-![json input iium schedule](./screenshots/2022-03-05-192843.png)
+![json input iium schedule](./screenshots/iiumschedule-json-input.png)
