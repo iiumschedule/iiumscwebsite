@@ -56,7 +56,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'extract/imaluum/index',
+            docId: 'extract/index',
             position: 'left',
             label: 'Guides',
           },
@@ -125,7 +125,7 @@ const config = {
           },
         ],
         // thanks https://github.com/facebook/docusaurus/discussions/6628
-        copyright: '<div>Copyright © 2022 <a style="color: #bbe3ff" href="https://iqfareez.com">Muhammad Fareez</a></div>',
+        copyright: '<div>Copyright © 2023 <a style="color: #bbe3ff" href="https://iqfareez.com">Muhammad Fareez</a></div>',
       },
       metadata: [{
         property: "og:image", content: "https://iiumschedule.vercel.app/img/meta-banner.png"
