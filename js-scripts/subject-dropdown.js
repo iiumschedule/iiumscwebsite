@@ -1,4 +1,4 @@
-var trends = document.querySelector('body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > select'), i;
+let trends = document.querySelector('body > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > select'), i;
 
 const data = new Map();
 
