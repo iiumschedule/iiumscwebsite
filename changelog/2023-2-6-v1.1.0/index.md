@@ -41,7 +41,7 @@ tags: [v1.1.0, minor]
 :::note
 
 If you found any issues or bug in this release, feel free to let me know via [GitHub Issues](https://github.com/iqfareez/iium_schedule/issues) or
-by sending a [feedback](../../feedback). Any suggestions for future improvements is also very welcomed.
+by sending a [feedback](/feedback). Any suggestions for future improvements is also very welcomed.
 
 :::
 
