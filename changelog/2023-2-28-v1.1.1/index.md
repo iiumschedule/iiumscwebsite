@@ -1,9 +1,9 @@
 ---
 title: v1.1.1
 authors: [fareez]
-description: Improved UI and experiences
+description: New release features a redesigned subject viewer, responsive layout, font size options, and improved navigation bar. Upgraded dependencies and bug fixes included
 image: https://og-puce.vercel.app/api/og/iiumschedulem3?version=1.1.1
-tags: [v1.1.1, minor]
+tags: [v1.1.1, patch]
 ---
 
 ## What's New
