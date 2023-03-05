@@ -30,12 +30,13 @@ const config = {
           blogTitle: 'Release Notes',
           blogDescription: 'IIUM Schedule stable version release notes',
           blogSidebarTitle: 'Release notes',
+          blogSidebarCount: 'ALL',
           path: 'changelog',
           postsPerPage: 4,
           showReadingTime: false,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/iqfareez/iiumscwebsite/tree/master/changelog',
         },
         // blog: false,
         theme: {
