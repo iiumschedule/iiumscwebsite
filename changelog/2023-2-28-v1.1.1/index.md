@@ -9,7 +9,7 @@ tags: [v1.1.1, patch]
 ## What's New
 
 - :lipstick: Redesigned **subject viewer** - Replaced the dialog with a full page (Only for saved schedule, for unsaved subject, the dialog remains)
-  - Why? Because previously, when using dialog and user want to edit, the diaog will glitch a bit. It was caused due to the widget rebuilds. This is bad for the UX, hence this changes.
+  - Why? Because previously, when using dialog and user want to edit, the dialog will [glitch a bit](https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTY1MTI0NjU2OTU1ODEx?story_media_id=2995688894800174042_32997533904&igshid=OTRmMjhlYjM=). It was caused due to the widget rebuilds. This is bad for the UX, hence this changes.
   ![Old vs new subject layout](./new-subject-page.png)
 - :iphone: **Responsive layout** - Adapt for wide screen devices (eg desktop or tablet) - this is just the beginning, I'm planning to _responsivenessify_ (make responsive) of other UI elements.
   ![responsize home](./responsive-layout.png)
