@@ -10,6 +10,7 @@ tags: [v1.1.4, patch]
 
 - :sparkles: Added ability to change the schedule's time (It's has been requested for a long time). Thank you for those that proposing this feature. [#37](https://github.com/iqfareez/iium_schedule/issues/37)
     ![demo edit time](https://imgur.com/EYwFqkb.gif)
+
 - :pencil2: Added hint text about the pull-to-refresh features _(Note: This text apprear randomly)_.
 
 ___
