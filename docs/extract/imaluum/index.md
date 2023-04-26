@@ -2,7 +2,7 @@
 title: from i-ma'luum
 ---
 
-# Extract subjects from i-ma'luum
+# Extract subjects from i-Ma'luum
 
 You are viewing the steps to extract schedule information via **I-ma'luum website**. For prereg, click [here](../prereg/).
 

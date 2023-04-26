@@ -8,12 +8,21 @@ for (let i = 1; i < data.length; i++) {
     if (date === "No final") continue
 
     const coursecode = data[i].cells[0].innerText;
+    const title = data[i].cells[1].innerText;
     const sect = parseInt(data[i].cells[2].innerText);
     const time = data[i].cells[4].innerText;
     const venue = data[i].cells[5].innerText;
     const seat = parseInt(data[i].cells[6].innerText);
 
-    extractedData.push({courseCode: coursecode, section: sect, date: date, time: time, venue: venue, seat: seat,});
+    extractedData.push({
+        courseCode: coursecode,
+        title: title,
+        section: sect,
+        date: date,
+        time: time,
+        venue: venue,
+        seat: seat,
+    });
 }
 
 const json = JSON.stringify(extractedData); // data
