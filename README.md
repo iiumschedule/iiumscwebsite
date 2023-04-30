@@ -1,4 +1,4 @@
-![Khan Academy](https://img.shields.io/badge/Docusaurus-%233ecc5f?style=for-the-badge)
+![Docusaurus](https://img.shields.io/badge/Docusaurus-%233ecc5f?style=for-the-badge)
 ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
@@ -13,24 +13,24 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ## Getting Started
 
-### Installation
-
-```
-$ npm install
-```
-
-### Local Development
-
-```
-$ npm start
-```
-
 ### GitHub Codespaces Development
 
-For help on creating codespace, click [here](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)]((https://codespaces.new/iqfareez/iiumscwebsite))
+
+And, to start the development server, use:
 
 ```
 $ npm start -- --host 0.0.0.0
 ```
 
-These commands start a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### Local
+
+```
+$ npm install
+```
+Then,
+
+```
+$ npm start
+```
+
