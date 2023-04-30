@@ -6,9 +6,11 @@ import Typewriter from 'typewriter-effect';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { inject } from '@vercel/analytics';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  inject();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
