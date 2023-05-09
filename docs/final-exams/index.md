@@ -1,5 +1,5 @@
 ---
-title: from i-ma'luum
+title: Extract final exams JSON from i-ma'luum
 ---
 
 # Extract final exams from i-Ma'luum
@@ -15,7 +15,7 @@ For Android, you may use **import from i-Ma'luum** directly.
 
 and navigate to **My Academic >** [**Final Exam**](https://imaluum.iium.edu.my/MyAcademic/final-exam).
 
-Please check that the final exams is already updated for the current semester before proceeding.!
+Please check that the final exams is already updated for the current semester before proceeding. Otherwise, the app will refuse to add the exams(s).
 
 ![imaluum final exam](./screenshots/imaluum-final-exam.png)
 
@@ -84,5 +84,5 @@ The script will scrape the exam information. After the process completed, anothe
 
 Finally, Paste the JSON result into the app's **JSON input** (Final Exam > + (Add exam button) > Import JSON.
 
-[//]: # (![json input iium schedule]&#40;./screenshots/iiumschedule-json-input.png&#41;)
+![json input iium schedule](https://imgur.com/cWTviND.png)
 
