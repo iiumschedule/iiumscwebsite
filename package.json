@@ -16,9 +16,11 @@
   "dependencies": {
     "@docusaurus/core": "^2.4.0",
     "@docusaurus/preset-classic": "^2.4.0",
-    "@emotion/react": "^11.10.0",
+    "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.10.0",
     "@mantine/carousel": "^6.0.11",
+    "@mantine/core": "^6.0.11",
+    "@mantine/hooks": "^6.0.11",
     "@mdx-js/react": "^1.6.22",
     "@mui/icons-material": "^5.10.6",
     "@mui/material": "^5.10.0",
