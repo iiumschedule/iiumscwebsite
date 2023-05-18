@@ -33,9 +33,9 @@ const sidebars = {
       label: '📚 Extract final exam',
       link: {
         type: 'doc',
-        id: 'extract/index',
+        id: 'final-exams/index',
       },
-      items: ['extract/final-exams/index'],
+      items: ['final-exams/index'],
     },
     {
       type: 'category',
