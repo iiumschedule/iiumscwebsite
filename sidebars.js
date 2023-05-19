@@ -30,6 +30,15 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '📚 Extract final exam',
+      link: {
+        type: 'doc',
+        id: 'final-exams/index',
+      },
+      items: ['final-exams/index'],
+    },
+    {
+      type: 'category',
       label: '🧑🏼‍💻 For developers',
       link: {
         type: 'doc',
