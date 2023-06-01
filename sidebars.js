@@ -44,7 +44,7 @@ const sidebars = {
         type: 'doc',
         id: 'devs/albiruni',
       },
-      items: ['devs/albiruni', 'devs/input-parser-api'],
+      items: ['devs/albiruni', 'devs/albiruni-api'],
     },
   ],
 
