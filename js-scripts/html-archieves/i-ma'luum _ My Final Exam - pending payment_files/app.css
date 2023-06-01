@@ -1,0 +1,21 @@
+.body-page {
+	background-size: contain;
+	background:#ECF0F5 url("/assets/images/ornament.png") repeat center;
+}
+.box-shadow {
+	box-shadow: 1px 2px 5px gray;
+}
+.growl {
+  opacity: 0.9;
+}
+.callout {
+	padding:15px 8px 15px 15px;
+}
+
+/* remove outlines */
+button:focus, 
+input[type="file"]:focus, 
+input[type="radio"]:focus, 
+input[type="checkbox"]:focus {
+	outline: none;
+}
