@@ -2,8 +2,8 @@
 title: v1.2.1
 authors: [fareez]
 description: Sorry, I've made an oopsie
-image: https://og-puce.vercel.app/api/og/iiumschedulem3?version=1.2.0
-tags: [v1.2.0, patch, bug fix]
+image: https://og-puce.vercel.app/api/og/iiumschedulem3?version=1.2.1
+tags: [v1.2.1, patch, bug fix]
 ---
 
 ## Hotfix Update
