@@ -1,7 +1,7 @@
 ---
 title: v1.3.0
 authors: [fareez]
-description: Update behaviour when exam finishes. 
+description: Update behaviour when exam finishes, and some other fixes.
 image: https://og-puce.vercel.app/api/og/iiumschedulem3?version=1.3.0
 tags: [v1.3.0, minor]
 ---
