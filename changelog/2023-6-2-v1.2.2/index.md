@@ -11,7 +11,7 @@ tags: [v1.2.2, patch, bug fix]
 - :bug: Add **validation in imaluum importer** to show error when the target HTML element is not found.
     - Without this fix, the laoding indicator will not stop, and user will not aware of this error, leading to bad UX.
     - Example when this is useful: _When Final exam is not available yet (ie finance block etc.)_.
-    - Thanks _ElyasAsmad_ for reporting.
+    - Thanks [ElyasAsmad](https://github.com/ElyasAsmad) for reporting.
 - :arrow_up: Upgrade dependencies
 - :pencil2: Fix **help links** in Imaluum importer. _Importing course subject should point to [here](https://iiumschedule.iqfareez.com/docs/extract) and final exam should go [here](https://iiumschedule.iqfareez.com/docs/final-exams/)_
 - :pencil2: Change **default semester** to sem 3 (`2022/2023`). Add **new session** `2023/2024`.
