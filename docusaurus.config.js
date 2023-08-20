@@ -122,6 +122,10 @@ const config = {
                 label: 'Devlog',
                 href: 'https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTAxOTkzNjUzNDk0NDQ3',
               },
+              {
+                label: 'Branding',
+                to: '/branding',
+              },
             ],
           },
         ],
