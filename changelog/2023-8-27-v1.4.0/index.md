@@ -32,4 +32,4 @@ app icon will follow the device themes.
   ![session sem screenshot selector](session-n-sem-default.png)
 - :lipstick: Fix some minor isues in UI
 
-[![GitHub Releases](https://img.shields.io/badge/view%20on%20github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iqfareez/iium_schedule/releases/tag/1.3.2%2B37)
+[![GitHub Releases](https://img.shields.io/badge/view%20on%20github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iqfareez/iium_schedule/releases/tag/1.4.0%2B39)
