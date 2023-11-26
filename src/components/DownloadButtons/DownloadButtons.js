@@ -12,7 +12,7 @@ export default function SearchResults(props) {
         let ignore = false;
 
         async function fetchData() {
-            const result = await axios('https://api.github.com/repos/iqfareez/iium_schedule/releases/latest');
+            const result = await axios('https://api.github.com/repos/iiumschedule/iium_schedule/releases/latest');
 
             const assets = result.data.assets.filter(asset => asset.name.endsWith(props.filetype));
             if (!ignore) setData(assets);

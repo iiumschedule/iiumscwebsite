@@ -70,7 +70,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/iqfareez/iium_schedule',
+            href: 'https://github.com/iiumschedule/iium_schedule',
             label: 'GitHub',
             position: 'right',
           },
