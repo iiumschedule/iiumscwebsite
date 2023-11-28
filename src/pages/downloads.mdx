@@ -62,13 +62,33 @@ IIUM Schedule app is available for multiple platforms. [(Release notes)](/change
 
 ## macOS
 
-<DownloadButtons filetype={".dmg"}/>
+<Tabs
+    defaultValue="brew"
+    values={[
+        {label: 'brew', value: 'brew'},
+        {label: 'dmg', value: 'dmg'},
+    ]}>
+    <TabItem value="dmg">
+        <DownloadButtons filetype={".dmg"}/>
+        <br/>
+        <p>
+            Installation step:
+            <ul>
+                <li>Open the downloaded dmg file.</li>
+                <li>Drag the app to the Applications folder.</li>
+            </ul>
+        </p>
+    </TabItem>
+    <TabItem value="brew">
+        <CodeBlock language="bash">
+            brew tap iiumschedule/iiumschedule
+        </CodeBlock>
+        <CodeBlock language="bash">
+            brew install iiumschedule
+        </CodeBlock>
+    </TabItem>
+</Tabs>
 
-<br/>
-
-Installation step:
-- Open the downloaded dmg file.
-- Drag the app to the Applications folder.
 
 ## Web
 
