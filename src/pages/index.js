@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello`}
-      description="Generate your IIUM Schedule with only a few clicks. App available for Android, Web and Windows.">
+      description="Generate your IIUM Schedule with only a few clicks. App available for Android, MacOS and Windows.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
