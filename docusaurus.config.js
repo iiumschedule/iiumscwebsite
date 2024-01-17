@@ -65,11 +65,6 @@ const config = {
             to: '/downloads', label: 'Downloads', position: 'left',
           },
           {
-            href: 'https://iiumschedule.web.app',
-            label: 'Web app',
-            position: 'right',
-          },
-          {
             href: 'https://github.com/iiumschedule/iium_schedule',
             label: 'GitHub',
             position: 'right',
