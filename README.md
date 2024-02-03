@@ -15,7 +15,7 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ### GitHub Codespaces Development
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)]((https://codespaces.new/iqfareez/iiumscwebsite))
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](<(https://codespaces.new/iqfareez/iiumscwebsite)>)
 
 And, to start the development server, use:
 
@@ -26,11 +26,11 @@ $ npm start -- --host 0.0.0.0
 ### Local
 
 ```
-$ npm install
+$ npm install --legacy-peer-deps
 ```
+
 Then,
 
 ```
 $ npm start
 ```
-
