@@ -79,6 +79,8 @@ export default function FeedbackPage() {
               {sent && <Alert severity="success" action={
                 <Button href={'/'}>Back Home</Button>
               }>Feedback successfully sent!</Alert>}
+              <div style={{padding: "15px"}}></div>
+              <p>Alternatively, you can file an issue directly on <a href="https://github.com/iiumschedule/iium_schedule/issues">GitHub</a>.</p>
               <div style={{padding: "40px"}}></div>
             </form>
           </MUIThemeWrapper>
