@@ -8,7 +8,7 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ## URLs
 
-- https://iiumschedule.iqfareez.com/
+- https://iiumschedule.iqfareez.com/ or
 - https://iiumschedule.vercel.app
 
 ## Getting Started
@@ -19,18 +19,18 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 And, to start the development server, use:
 
-```
-$ npm start -- --host 0.0.0.0
+```shell
+npm start -- --host 0.0.0.0
 ```
 
 ### Local
 
-```
-$ npm install --legacy-peer-deps
+```shell
+npm install --legacy-peer-deps
 ```
 
 Then,
 
-```
-$ npm start
+```shell
+npm start
 ```
